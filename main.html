@@ -12,8 +12,32 @@
 		<h1>Feedback Form</h1>
 	<form>
 		<div>
-			<label for="name">Name</label>
-			<input type="text" name="full name">
+			<label for="name">Name :</label>
+			<input type="text" name="full name" id="name" min="3" max="50" required>
+		</div>
+		<br>
+		<div>
+			<label for="portfolio">Portfolio :</label>
+			<input type="url" name="portfolio" id="portfolio" required>
+		</div>
+		<br>
+		<div>
+			<label for="favcolor">Fav Color :</label>
+			<select id="favcolor" name="favcolor">
+				<option value="green">green</option>
+				<option value="blue">blue</option>
+				<option value="black">black</option>
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+		</div>
+		<br>
+		<div>
+			<label for="slider">likeness :</label>
+			<input type="range" name="likeness" id="likeness" min="1" max="100">
+		</div>
+		<br>
+		<button type"submit">Submit</button>
+	</form>
 		
     <script type="text/javascript" src="./script.js">
 </script>
